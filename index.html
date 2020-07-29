@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <title> Grid images</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h1>capture</h1>
+    </div>
+    <ul>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="first">
+      <div class="img-cont">
+      <img src="https://images.unsplash.com/photo-1553190842-24c3f93ba116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="">
+      <div class="content">
+        <h2>Panasonic Lumix TZ200</h2>
+        <h3>Equipment</h3>
+      </div>
+      <span class="content-hover">
+        <h2>Panasonic Lumix TZ200</h2>
+        <h3>Equipment</h3>
+      </span>
+    </div>
+    </div>
+    
+    <div class="first-2">
+      <div class="img-cont">
+      <img src="https://images.unsplash.com/photo-1595454248737-f2bb27bf00d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="">
+      <div class="content">
+        <h2>Canon Powershot Elph 190is</h2>
+        <h3>Equipment</h3>
+      </div>
+      <span class="content-hover">
+        <h2>Canon Powershot Elph 190is</h2>
+        <h3>Equipment</h3>
+      </span>
+    </div>
+    </div>
+
+     <div class="first-3">
+      <div class="img-cont">
+      <img src="https://images.unsplash.com/photo-1595327656903-2f54e37ce09b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="coffee">
+      <div class="content">
+        <h2>iPhone 11 Pro</h2>
+        <h3>Equipment</h3>
+      </div>
+      <span class="content-hover">
+        <h2>iPhone 11 Pro</h2>
+        <h3>Equipment</h3>
+      </span>
+      </div>
+   
+    </div>
+    <!-- middle -->
+    <div class="middel-1">
+      <div class="img-cont">
+      <img src="https://images.unsplash.com/photo-1595364397663-fca4f075d796?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="">
+      <div class="content">
+        <h2>Panasonic Lumix TZ200</h2>
+      <h3>Equipment</h3>
+      </div>
+      <span class="content-hover">
+        <h2>Panasonic Lumix TZ200</h2>
+      <h3>Equipment</h3>
+      </span>
+      </div>
+      
+    </div>
+    <div class="middle-2">
+      <div class="img-cont">
+      <img src="https://images.unsplash.com/photo-1595202532316-928c1dcf3eed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="keyboard">
+      <div class="content">
+        <h2>Nikon D850</h2>
+        <h3>Equipment</h3>  
+      </div>
+      <span class="content-hover">
+        <h2>Nikon D850</h2>
+        <h3>Equipment</h3>  
+      </span>
+      </div>
+          
+    </div>
+    <!-- last one -->
+    <div class="last">
+      <div class="img-cont">
+      <img src="https://images.unsplash.com/photo-1560317620-1ba88ae56e7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="watch">
+      <div class="content">
+        <h2>iPhone 11 Pro</h2>
+        <h3>Equipment</h3>
+      </div>
+      <span class="content-hover">
+        <h2>iPhone 11 Pro</h2>
+        <h3>Equipment</h3>
+      </span>
+      </div>
+     
+    </div>
+  </main>
+
+  <footer>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <h3> &copy; Copyright 2020 Capture</h3>
+  </footer>
+  <script>
+  const content = document.querySelectorAll('.content-hover');
+
+  function showcontent(e) {
+  for(var i = 0; i < content.length; i++) {
+    x = e.pageX;
+    y = e.pageY;
+    content[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  }
+};
+
+document.addEventListener('mousemove', showcontent);
+  </script>
+</body>
+</html>

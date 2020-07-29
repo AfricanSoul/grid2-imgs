@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between; 
+   align-items: center;
+  height: 7rem;
+}
+.logo{
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  margin-left: 5.2rem;
+  color: #f88373;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1rem;
+  list-style: none;
+  margin-right: 5rem;
+  color: black;
+}
+li{
+  cursor: pointer;
+  margin: 1rem;
+}
+li:hover{
+  color: #787878;
+}
+@media (max-width: 1158px) {
+  ul{
+    margin-right: auto;
+    margin-top: 0.2rem;
+  }
+
+}
+body{
+  background-color: rgb(247, 244, 244);
+  line-height: 1.5;
+  font-family: 'Barlow', sans-serif;
+  overflow-x:hidden;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(11, 100px);
+  justify-content: center;
+  align-items: center;
+  grid-auto-rows: auto;
+  gap: 1.5rem;
+}
+@media (max-width: 1158px) {
+  .container{
+       display: block;
+       margin: 0 1.4rem;
+  }
+}
+
+.img-cont {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.img-cont:hover .content-hover {
+  display: block;
+}
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.05);
+}
+.content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+
+}
+.content {
+  display: none;
+}
+
+.first{
+  grid-column:2/5 ;
+  grid-row: 1;
+}
+.first-2{
+  grid-column: 5/8;
+  grid-row: 1;
+}
+.first-3{
+  grid-column: 8/11;
+  grid-row: 1;
+}
+
+.middel-1{
+  grid-row: 2;
+  grid-column:2/7;
+}
+.middle-2{
+  grid-row: 2;
+  grid-column:7/11;
+
+}
+.last{
+  grid-row:3;
+  grid-column: 2/11;
+  margin-bottom: 5rem;
+}
+h2{
+  margin-top: 1rem; 
+  font-weight: 700;
+}
+h3{
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+footer{
+  background-color:#f0ecec;
+  /* color: white; */
+  color: #787878;
+  padding: 1rem;
+  margin-top: auto;
+  text-align: center; 
+}
+i{
+  font-size: 23px;
+  margin: 1rem;
+  cursor: pointer;
+}
+i:hover{
+  color: black;
+}
+
+@media screen and (max-width: 1158px) {
+  img:hover {
+    transform: none;
+  }
+  
+  .img-cont {
+    height: 100%;
+
+  }
+  .img-cont:hover .content-hover {
+    display: none;
+  }
+
+  .content {
+    display: block;
+    padding: 1rem 0;
+  }
+}
